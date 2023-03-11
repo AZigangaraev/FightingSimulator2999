@@ -20,7 +20,18 @@ class FightPresenter {
     private weak var view: FightViewController?
 
 
+    @MainActor
     func basicAttack() {
-        fightService.basicAttack()
+        print(12)
+        let result = fightService.basicAttack()
+        view?.setMyHealth(value: Float(result.myHealth))
+        view?.setEnemyHealth(value: Float(result.enemyHealth))
+    }
+
+    @MainActor
+    func magicAttack() {
+        let result = fightService.magicAttack()
+        view?.setMyHealth(value: Float(result.myHealth))
+        view?.setEnemyHealth(value: Float(result.enemyHealth))
     }
 }

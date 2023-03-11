@@ -28,15 +28,15 @@ class FightServiceImplementation: FightService {
         print(_enemyHealth.value)
     }
 
-    func basicAttack() {
-        print("Basic attack")
-        print(_myHealth.value)
-        print(_enemyHealth.value)
+    func basicAttack() -> (enemyHealth: Int, myHealth: Int) {
+        _enemyHealth.value -= 9
+        _myHealth.value -= 10
+        return (enemyHealth: _enemyHealth.value, myHealth: _myHealth.value)
     }
 
-    func magicAttack() {
-        print(123)
+    func magicAttack() -> (enemyHealth: Int, myHealth: Int) {
+        _enemyHealth.value -= 15
+        _myHealth.value -= 10
+        return (enemyHealth: _enemyHealth.value, myHealth: _myHealth.value)
     }
-
-
 }

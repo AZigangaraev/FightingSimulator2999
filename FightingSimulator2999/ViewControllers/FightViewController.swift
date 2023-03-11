@@ -28,7 +28,15 @@ class FightViewController: UIViewController {
 
     @IBAction
     private func magicAttackTap() {
-//        fightService.magicAttack()
+        presenter.magicAttack()
+    }
+
+    func setMyHealth(value: Float) {
+        myHealthView.progress = value / 100
+    }
+
+    func setEnemyHealth(value: Float) {
+        enemyHealthView.progress = value / 100
     }
 }
 
