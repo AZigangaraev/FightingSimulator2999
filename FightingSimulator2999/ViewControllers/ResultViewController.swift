@@ -7,11 +7,12 @@
 
 import UIKit
 
+enum Result {
+    case win
+    case lose
+}
+
 class ResultViewController: UIViewController {
-    enum Result {
-        case win
-        case lose
-    }
 
     var result: Result = .lose
 
@@ -22,10 +23,10 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
 
         switch result {
-            case .win:
-                resultLabel.text = "You win!"
-            case .lose:
-                resultLabel.text = "You lose!"
+        case .win:
+            resultLabel.text = "You win!"
+        case .lose:
+            resultLabel.text = "You lose!"
         }
     }
 

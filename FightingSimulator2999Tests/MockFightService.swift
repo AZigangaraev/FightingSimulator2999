@@ -10,6 +10,7 @@ import Combine
 @testable import FightingSimulator2999
 
 class MockFightService: FightService {
+
     var _myHealth: CurrentValueSubject<Int, Never> = .init(100)
     var _enemyHealth: CurrentValueSubject<Int, Never> = .init(100)
 
@@ -30,5 +31,9 @@ class MockFightService: FightService {
 
     func magicAttack() {
         magicAttackCalled = true
+    }
+
+    func getHealths() -> (enemyHealth: Int, myHealth: Int) {
+        return (1, 1)
     }
 }

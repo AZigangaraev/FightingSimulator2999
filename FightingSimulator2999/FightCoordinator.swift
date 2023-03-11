@@ -29,4 +29,10 @@ public class FightCoordinator {
 
         return navigationController
     }
+
+    func showResultViewController(result: Result) {
+        let controller: ResultViewController = storyboard.instantiateViewController(identifier: "ResultViewController")
+        controller.result = result
+        navigationController?.pushViewController(controller, animated: true)
+    }
 }

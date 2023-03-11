@@ -18,7 +18,8 @@ protocol FightService {
     /// Restores player and enemy health to 100
     func startFight()
     /// Deals 9 damage to enemy. Enemy attacks back and reduces `myHealth` by 10.
-    func basicAttack() -> (enemyHealth: Int, myHealth: Int)
+    func basicAttack()
     /// Deals 7-15 damage. Enemy attacks back and reduces `myHealth` by 10.
-    func magicAttack() -> (enemyHealth: Int, myHealth: Int)
+    func magicAttack()
+    func getHealths() -> (enemyHealth: Int, myHealth: Int) 
 }

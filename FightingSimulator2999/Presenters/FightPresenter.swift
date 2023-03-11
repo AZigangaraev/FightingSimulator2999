@@ -10,26 +10,28 @@ import UIKit
 class FightPresenter {
     init(
         fightService: FightService,
-        view: FightViewController
+        view: FightView
     ) {
         self.fightService = fightService
         self.view = view
     }
 
     private var fightService: FightService!
-    private weak var view: FightViewController?
+    private weak var view: FightView?
 
 
     @MainActor
     func basicAttack() {
-        let result = fightService.basicAttack()
+        fightService.basicAttack()
+        let result = fightService.getHealths()
         view?.setMyHealth(value: Float(result.myHealth))
         view?.setEnemyHealth(value: Float(result.enemyHealth))
     }
 
     @MainActor
     func magicAttack() {
-        let result = fightService.magicAttack()
+        fightService.magicAttack()
+        let result = fightService.getHealths()
         view?.setMyHealth(value: Float(result.myHealth))
         view?.setEnemyHealth(value: Float(result.enemyHealth))
     }

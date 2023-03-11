@@ -8,8 +8,25 @@
 import XCTest
 
 final class FightingSimulator2999UITests: XCTestCase {
-    func testExample() throws {
+
+    override func setUp() {
         let app = XCUIApplication()
         app.launch()
+        self.app = app
+    }
+
+    var app: XCUIApplication!
+
+    func testResultViewControllerAppeared() throws {
+        while (app.staticTexts["Magic attack"].exists) {
+            XCUIApplication().staticTexts["Magic attack"].tap()
+        }
+
+        let button = app.buttons["Restart"].firstMatch
+
+        _ = button.waitForExistence(timeout: 3)
+
+        XCTAssertTrue(button.exists)
+
     }
 }
