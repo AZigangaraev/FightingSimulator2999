@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A211A5429BC9D4700956747 /* FightPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A211A5329BC9D4700956747 /* FightPresenter.swift */; };
+		9A211A5629BCA18500956747 /* RestFightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A211A5529BCA18500956747 /* RestFightService.swift */; };
+		9A211A5829BCAC0100956747 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A211A5729BCAC0100956747 /* AppCoordinator.swift */; };
 		AED7BC0C29BC7AE600DCF749 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED7BC0B29BC7AE600DCF749 /* AppDelegate.swift */; };
 		AED7BC0E29BC7AE600DCF749 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED7BC0D29BC7AE600DCF749 /* SceneDelegate.swift */; };
 		AED7BC1029BC7AE600DCF749 /* FightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED7BC0F29BC7AE600DCF749 /* FightViewController.swift */; };
@@ -39,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A211A5329BC9D4700956747 /* FightPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightPresenter.swift; sourceTree = "<group>"; };
+		9A211A5529BCA18500956747 /* RestFightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestFightService.swift; sourceTree = "<group>"; };
+		9A211A5729BCAC0100956747 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		AED7BC0829BC7AE600DCF749 /* FightingSimulator2999.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FightingSimulator2999.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED7BC0B29BC7AE600DCF749 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AED7BC0D29BC7AE600DCF749 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +120,7 @@
 				AED7BC1929BC7AE700DCF749 /* LaunchScreen.storyboard */,
 				AED7BC1C29BC7AE700DCF749 /* Info.plist */,
 				AED7BC1429BC7AE600DCF749 /* FightingSimulator2999.xcdatamodeld */,
+				9A211A5729BCAC0100956747 /* AppCoordinator.swift */,
 			);
 			path = FightingSimulator2999;
 			sourceTree = "<group>";
@@ -139,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				AED7BC4429BC7B6800DCF749 /* FightService.swift */,
+				9A211A5529BCA18500956747 /* RestFightService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -148,6 +156,7 @@
 			children = (
 				AED7BC0F29BC7AE600DCF749 /* FightViewController.swift */,
 				AED7BC4229BC7B5700DCF749 /* ResultViewController.swift */,
+				9A211A5329BC9D4700956747 /* FightPresenter.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -284,9 +293,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AED7BC4329BC7B5700DCF749 /* ResultViewController.swift in Sources */,
+				9A211A5429BC9D4700956747 /* FightPresenter.swift in Sources */,
+				9A211A5629BCA18500956747 /* RestFightService.swift in Sources */,
 				AED7BC1029BC7AE600DCF749 /* FightViewController.swift in Sources */,
 				AED7BC4529BC7B6800DCF749 /* FightService.swift in Sources */,
 				AED7BC0C29BC7AE600DCF749 /* AppDelegate.swift in Sources */,
+				9A211A5829BCAC0100956747 /* AppCoordinator.swift in Sources */,
 				AED7BC0E29BC7AE600DCF749 /* SceneDelegate.swift in Sources */,
 				AED7BC1629BC7AE600DCF749 /* FightingSimulator2999.xcdatamodeld in Sources */,
 			);
@@ -469,7 +481,6 @@
 				INFOPLIST_FILE = FightingSimulator2999/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -496,7 +507,6 @@
 				INFOPLIST_FILE = FightingSimulator2999/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
