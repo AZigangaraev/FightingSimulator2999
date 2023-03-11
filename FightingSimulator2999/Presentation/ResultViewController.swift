@@ -7,11 +7,13 @@
 
 import UIKit
 
+enum Result {
+    case win
+    case lose
+}
+
 class ResultViewController: UIViewController {
-    enum Result {
-        case win
-        case lose
-    }
+    var fightService: FightService!
 
     var result: Result = .lose
 
@@ -31,5 +33,6 @@ class ResultViewController: UIViewController {
 
     @IBAction
     private func restartTap() {
+        fightService.startFight()
     }
 }

@@ -8,8 +8,17 @@
 import XCTest
 
 final class FightingSimulator2999UITests: XCTestCase {
-    func testExample() throws {
+    override func setUp() {
         let app = XCUIApplication()
         app.launch()
+        self.app = app
+    }
+    
+    var app: XCUIApplication!
+
+    func testShowButton() throws {
+        let button = app.buttons["Basic attack"]
+        
+        XCTAssertTrue(button.exists)
     }
 }
