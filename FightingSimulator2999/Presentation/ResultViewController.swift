@@ -1,10 +1,3 @@
-//
-//  ResultViewController.swift
-//  FightingSimulator2999
-//
-//  Created by Teacher on 11.03.2023.
-//
-
 import UIKit
 
 class ResultViewController: UIViewController {
@@ -31,5 +24,6 @@ class ResultViewController: UIViewController {
 
     @IBAction
     private func restartTap() {
+        navigationController?.popViewController(animated: true)
     }
 }

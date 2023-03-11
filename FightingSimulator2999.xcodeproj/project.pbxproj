@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F4A54D829BCB878006A3635 /* FightPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A54D729BCB878006A3635 /* FightPresenter.swift */; };
+		7F4A54DA29BCB8AA006A3635 /* FightCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A54D929BCB8AA006A3635 /* FightCoordinator.swift */; };
 		AED7BC0C29BC7AE600DCF749 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED7BC0B29BC7AE600DCF749 /* AppDelegate.swift */; };
 		AED7BC0E29BC7AE600DCF749 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED7BC0D29BC7AE600DCF749 /* SceneDelegate.swift */; };
 		AED7BC1029BC7AE600DCF749 /* FightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED7BC0F29BC7AE600DCF749 /* FightViewController.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F4A54D729BCB878006A3635 /* FightPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightPresenter.swift; sourceTree = "<group>"; };
+		7F4A54D929BCB8AA006A3635 /* FightCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightCoordinator.swift; sourceTree = "<group>"; };
 		AED7BC0829BC7AE600DCF749 /* FightingSimulator2999.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FightingSimulator2999.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED7BC0B29BC7AE600DCF749 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AED7BC0D29BC7AE600DCF749 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +152,8 @@
 			children = (
 				AED7BC0F29BC7AE600DCF749 /* FightViewController.swift */,
 				AED7BC4229BC7B5700DCF749 /* ResultViewController.swift */,
+				7F4A54D729BCB878006A3635 /* FightPresenter.swift */,
+				7F4A54D929BCB8AA006A3635 /* FightCoordinator.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -284,11 +290,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AED7BC4329BC7B5700DCF749 /* ResultViewController.swift in Sources */,
+				7F4A54D829BCB878006A3635 /* FightPresenter.swift in Sources */,
 				AED7BC1029BC7AE600DCF749 /* FightViewController.swift in Sources */,
 				AED7BC4529BC7B6800DCF749 /* FightService.swift in Sources */,
 				AED7BC0C29BC7AE600DCF749 /* AppDelegate.swift in Sources */,
 				AED7BC0E29BC7AE600DCF749 /* SceneDelegate.swift in Sources */,
 				AED7BC1629BC7AE600DCF749 /* FightingSimulator2999.xcdatamodeld in Sources */,
+				7F4A54DA29BCB8AA006A3635 /* FightCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
