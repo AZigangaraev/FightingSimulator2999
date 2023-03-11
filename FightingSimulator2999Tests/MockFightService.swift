@@ -32,3 +32,6 @@ class MockFightService: FightService {
         magicAttackCalled = true
     }
 }
+
+
+

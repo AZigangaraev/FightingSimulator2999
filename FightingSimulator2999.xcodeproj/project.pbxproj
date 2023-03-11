@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		923448E029BC983B00B71255 /* FightPresenter .swift in Sources */ = {isa = PBXBuildFile; fileRef = 923448DF29BC983B00B71255 /* FightPresenter .swift */; };
+		923448E229BCA54600B71255 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923448E129BCA54600B71255 /* Coordinator.swift */; };
 		AED7BC0C29BC7AE600DCF749 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED7BC0B29BC7AE600DCF749 /* AppDelegate.swift */; };
 		AED7BC0E29BC7AE600DCF749 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED7BC0D29BC7AE600DCF749 /* SceneDelegate.swift */; };
 		AED7BC1029BC7AE600DCF749 /* FightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED7BC0F29BC7AE600DCF749 /* FightViewController.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		923448DF29BC983B00B71255 /* FightPresenter .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FightPresenter .swift"; sourceTree = "<group>"; };
+		923448E129BCA54600B71255 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		AED7BC0829BC7AE600DCF749 /* FightingSimulator2999.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FightingSimulator2999.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED7BC0B29BC7AE600DCF749 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AED7BC0D29BC7AE600DCF749 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +152,8 @@
 			children = (
 				AED7BC0F29BC7AE600DCF749 /* FightViewController.swift */,
 				AED7BC4229BC7B5700DCF749 /* ResultViewController.swift */,
+				923448DF29BC983B00B71255 /* FightPresenter .swift */,
+				923448E129BCA54600B71255 /* Coordinator.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -283,12 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				923448E229BCA54600B71255 /* Coordinator.swift in Sources */,
 				AED7BC4329BC7B5700DCF749 /* ResultViewController.swift in Sources */,
 				AED7BC1029BC7AE600DCF749 /* FightViewController.swift in Sources */,
 				AED7BC4529BC7B6800DCF749 /* FightService.swift in Sources */,
 				AED7BC0C29BC7AE600DCF749 /* AppDelegate.swift in Sources */,
 				AED7BC0E29BC7AE600DCF749 /* SceneDelegate.swift in Sources */,
 				AED7BC1629BC7AE600DCF749 /* FightingSimulator2999.xcdatamodeld in Sources */,
+				923448E029BC983B00B71255 /* FightPresenter .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +480,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -499,6 +508,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
