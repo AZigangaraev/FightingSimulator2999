@@ -35,7 +35,7 @@ class FightServiceImplementation: FightService {
     }
 
     func magicAttack() -> (enemyHealth: Int, myHealth: Int) {
-        _enemyHealth.value -= 15
+        _enemyHealth.value -= Int.random(in: 7...15)
         _myHealth.value -= 10
         return (enemyHealth: _enemyHealth.value, myHealth: _myHealth.value)
     }

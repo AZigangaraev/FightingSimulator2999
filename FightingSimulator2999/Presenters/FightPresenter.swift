@@ -22,7 +22,6 @@ class FightPresenter {
 
     @MainActor
     func basicAttack() {
-        print(12)
         let result = fightService.basicAttack()
         view?.setMyHealth(value: Float(result.myHealth))
         view?.setEnemyHealth(value: Float(result.enemyHealth))
