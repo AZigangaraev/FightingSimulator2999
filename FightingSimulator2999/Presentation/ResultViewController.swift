@@ -7,17 +7,23 @@
 
 import UIKit
 
-class ResultViewController: UIViewController {
-    enum Result {
-        case win
-        case lose
-    }
+enum Result {
+    case win
+    case lose
+}
 
-    var result: Result = .lose
+
+protocol ResultViewControllerDelegate: AnyObject {
+    func didTapRestart()
+}
+
+class ResultViewController: UIViewController {
+
+    var result: Result?
 
     @IBOutlet
     private var resultLabel: UILabel!
-
+    weak var delegate: ResultViewControllerDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,10 +32,15 @@ class ResultViewController: UIViewController {
                 resultLabel.text = "You win!"
             case .lose:
                 resultLabel.text = "You lose!"
+        case .none:
+            resultLabel.text = "error"
         }
     }
 
     @IBAction
     private func restartTap() {
+        delegate?.didTapRestart()
     }
 }
+
+

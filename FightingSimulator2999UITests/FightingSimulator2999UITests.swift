@@ -11,5 +11,9 @@ final class FightingSimulator2999UITests: XCTestCase {
     func testExample() throws {
         let app = XCUIApplication()
         app.launch()
+        
+        let result = app.buttons["Magic attack"].exists
+        XCTAssertTrue(result)
+        
     }
 }
