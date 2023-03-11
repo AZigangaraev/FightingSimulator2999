@@ -45,7 +45,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Basic attack"/>
                                                 <connections>
-                                                    <action selector="basicAttackTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="JKM-TB-DCj"/>
+                                                    <action selector="basicAttackTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="UPe-AO-O98"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXq-qK-xKM">
