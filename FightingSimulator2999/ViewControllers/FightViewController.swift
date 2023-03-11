@@ -6,12 +6,13 @@
 //
 
 import UIKit
-class FightViewController: UIViewController {
-    @IBOutlet
-    private var myHealthView: UIProgressView!
 
-    @IBOutlet
-    private var enemyHealthView: UIProgressView!
+@MainActor
+class FightViewController: UIViewController {
+    @IBOutlet private var myHealthView: UIProgressView!
+    @IBOutlet private var enemyHealthView: UIProgressView!
+
+    var presenter: FightPresenter!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,10 +23,12 @@ class FightViewController: UIViewController {
 
     @IBAction
     private func basicAttackTap() {
+        presenter.basicAttack()
     }
 
     @IBAction
     private func magicAttackTap() {
+//        fightService.magicAttack()
     }
 }
 
